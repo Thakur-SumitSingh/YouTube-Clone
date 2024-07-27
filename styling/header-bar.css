@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+}
+.header-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    background-color: white;
+    border-bottom: 1px solid rgb(230, 225, 225);
+}
+.left-part{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.middle-part{
+    flex: 1;
+    max-width: 600px;
+    margin-left: 80px;
+    margin-right: 45px;
+    display: flex;
+    flex-direction: row;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-part{
+    width: 175px;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.header-img1{
+    width: 37px;
+    margin-left: -10px;
+}
+.header-img2{
+    width: 165px;
+}
+.search-icon,.mic-icon{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+.search-icon{
+    width: 60px;
+    margin-left: -1px;
+    border: 1px solid rgb(158, 155, 155);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.15);
+}
+.mic-icon{
+    border-radius: 20px;
+    border: none;
+    margin-left: 20px;
+}
+.search-icon-inside{
+    width: 34px;
+    height: 30px; 
+    cursor: pointer;
+    padding-top: 2px;
+}
+.mic-icon-inside{
+   width: 30px;
+   cursor: pointer; 
+}
+.search{
+    flex: 1;
+    height: 36px;
+    border: 1px solid rgb(158, 155, 155);
+    font-size: 16px;
+    padding-left: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.15);
+    width: 0;
+}
+.search::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.right-part-camera{
+    width: 40px;
+    cursor: pointer;
+}
+.right-part-bell{
+    width: 35px;
+    cursor: pointer;
+}
+.right-part-maindp{
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.bell-notification{
+    position: relative;
+}
+.bell-notification-number{
+    width: 15px;
+    background-color: rgb(213, 2, 2);
+    position: absolute;
+    padding: 2px 4px 2px 4px;
+    border-radius: 20px;
+    top: -5px;
+    right: -7px;
+    color: white;
+    padding: 1px 5px 1px 5px;
+}
+
+.search-icon, .bell-notification,
+.created{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.mic-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.search-icon .tooltip,
+.mic-icon .tooltip, .notify{
+    background-color: rgb(137, 136, 136);
+    padding: 4px 8px 2px 8px;
+    color: white;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.20s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-icon:hover .tooltip,
+.mic-icon:hover .tooltip,
+.bell-notification:hover .notify,
+.created:hover .notify{
+    opacity: 1;
+}
+
+
