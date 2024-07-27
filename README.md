@@ -12,7 +12,7 @@ This project serves as a practice exercise to improve HTML/CSS skills and unders
 ## Features
 - Responsive design that adapts to different screen sizes
 - Replicated layout of YouTube's video grid and sidebar
-- Styled navigation bar and footer
+- Styled navigation bar
 
 ## Live Demo
 To see the YouTube Clone in action, click the link below:
